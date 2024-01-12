@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/connection');
 
-const sequelize = require('../config/connection.js');
-
+// Represents a product category
 class Category extends Model {}
 
 Category.init(
@@ -19,7 +19,7 @@ Category.init(
   },
   {
     sequelize,
-    timestamps: false,
+    timestamps: true, 
     freezeTableName: true,
     underscored: true,
     modelName: 'category',

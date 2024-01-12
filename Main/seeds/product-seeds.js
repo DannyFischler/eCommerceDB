@@ -2,35 +2,36 @@ const { Product } = require('../models');
 
 const productData = [
   {
-    product_name: 'Plain T-Shirt',
-    price: 14.99,
-    stock: 14,
-    category_id: 1,
+    product_name: 'Charizard Pokémon Card',
+    price: 150.00,
+    stock: 5,
+    category_id: 1 // Assign to 'Pokémon Cards'
   },
   {
-    product_name: 'Running Sneakers',
-    price: 90.0,
-    stock: 25,
-    category_id: 5,
+    product_name: 'Pikachu Plush Toy',
+    price: 20.00,
+    stock: 30,
+    category_id: 2 // Assign to 'Plush Toys'
   },
   {
-    product_name: 'Branded Baseball Hat',
-    price: 22.99,
+    product_name: 'Yu-Gi-Oh! Blue Eyes White Dragon Card',
+    price: 80.00,
+    stock: 7,
+    category_id: 1 // Assign to 'Trading Cards'
+  },
+  {
+    product_name: 'LEGO Star Wars Millennium Falcon',
+    price: 160.00,
     stock: 12,
-    category_id: 4,
+    category_id: 4 // Assign to 'Building Sets'
   },
   {
-    product_name: 'Top 40 Music Compilation Vinyl Record',
-    price: 12.99,
-    stock: 50,
-    category_id: 3,
-  },
-  {
-    product_name: 'Cargo Shorts',
-    price: 29.99,
-    stock: 22,
-    category_id: 2,
-  },
+    product_name: 'Super Mario Action Figure',
+    price: 25.00,
+    stock: 20,
+    category_id: 5 // Assign to 'Action Figures'
+  }
+
 ];
 
 const seedProducts = () => Product.bulkCreate(productData);
